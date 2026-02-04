@@ -1,5 +1,6 @@
 import numpy as np
 
+
 def leaky_relu(x, alpha: float = 0.01):
     """Vectorized Leaky ReLU.
 
@@ -9,7 +10,7 @@ def leaky_relu(x, alpha: float = 0.01):
         Input values.
     alpha: float
         Slope of the negative part.
-    
+
     Returns
     -------
     np.ndarray

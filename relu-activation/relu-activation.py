@@ -1,13 +1,14 @@
 import numpy as np
 
+
 def relu(x):
     """ReLU activation function.
-    
+
     Parameters
     ----------
     x: float | list | np.ndarray
         Input values.
-    
+
     Returns
     -------
     np.ndarray

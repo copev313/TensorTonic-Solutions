@@ -1,13 +1,14 @@
 import numpy as np
 
+
 def covariance_matrix(X):
     """Compute covariance matrix from dataset X.
-    
+
     Parameters
     ----------
     X: list[list[float]] | np.ndarray
         Dataset with shape (N, D)
-    
+
     Returns
     -------
     np.ndarray | None

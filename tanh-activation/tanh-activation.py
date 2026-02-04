@@ -1,13 +1,14 @@
 import numpy as np
 
+
 def tanh(x):
     """Tanh activation function.
-    
+
     Parameters:
     -----------
     x: int | float | list | np.ndarray
         Input value(s) to apply the tanh to.
-    
+
     Returns:
     --------
     np.ndarray

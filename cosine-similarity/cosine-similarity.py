@@ -1,5 +1,6 @@
 import numpy as np
 
+
 def cosine_similarity(a: np.ndarray, b: np.ndarray) -> float:
     """Compute cosine similarity between two Numpy arrays."""
     # Magnitudes of a and b:
