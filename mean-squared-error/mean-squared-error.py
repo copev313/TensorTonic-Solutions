@@ -18,10 +18,8 @@ def mean_squared_error(y_pred, y_true):
     """
     y_hat = np.array(y_pred)
     y = np.array(y_true)
-
     # [CASE] Shape mismatch:
     if y_hat.shape != y.shape:
         return None
 
-    diff = (y_hat - y) ** 2
-    return np.mean(diff)
+    return np.mean((y_hat - y) ** 2)
