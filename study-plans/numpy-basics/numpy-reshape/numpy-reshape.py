@@ -6,9 +6,10 @@ def reshape_array(data, operation):
     """
     arr = np.array(data, dtype=np.float64)
     dims = arr.shape
-    if operation == "flatten":
-        return arr.flatten()
-    elif operation == "transpose":
-        return arr.T
-    else:
-        return arr.reshape(1, *dims)
+    match operation:
+        case "flatten":
+            return arr.flatten()
+        case "transpose":
+            return arr.T
+        case "add_batch":
+            return arr.reshape(1, *dims) 
