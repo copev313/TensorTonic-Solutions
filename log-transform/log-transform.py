@@ -1,17 +1,5 @@
-from math import log1p
-
+import math
 
 def log_transform(values):
-    """Apply the log1p transformation to each value.
-
-    Parameters:
-    -----------
-    values: list[int | float]
-        A list of numeric values.
-
-    Returns:
-    --------
-    list[float]
-        Calculation of log1p of each input value.
-    """
-    return [log1p(v) for v in values]
+    """Apply the log1p transformation to each value."""
+    return [math.log1p(value) for value in values]
